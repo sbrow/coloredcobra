@@ -77,8 +77,8 @@ var templateTestHeadings = []templateTest{
 }
 
 var templateTests = []templateTest{
-	{`{{rpad .Name .NamePadding}}`, `{{rpad (CommandStyle .Name) (sum .NamePadding 12)}}`},
-	{`{{ rpad .Name .NamePadding }}`, `{{rpad (CommandStyle .Name) (sum .NamePadding 12)}}`},
+	{`{{rpad .Name .NamePadding}}`, `{{rpad (CommandStyle .Name) (sum .NamePadding 15)}}`},
+	{`{{ rpad .Name .NamePadding }}`, `{{rpad (CommandStyle .Name) (sum .NamePadding 15)}}`},
 	{`{{rpad .CommandPath .CommandPathPadding}}`, `{{rpad (CommandStyle .CommandPath) (sum .CommandPathPadding 12)}}`},
 	{`{{   rpad .CommandPath .CommandPathPadding   }}`, `{{rpad (CommandStyle .CommandPath) (sum .CommandPathPadding 12)}}`},
 	{`{{range .Commands}}{{.Short}}`, `{{range .Commands}}{{CmdShortStyle .Short}}`},
